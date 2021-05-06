@@ -58,7 +58,7 @@ setTimeout(function() {
     document.getElementById('risultato').innerHTML = 'Hai indovinato ' + numeriIndovinati + ' numeri <br> ' + numeroIndovinato;
     
 
-}, 3000);
+}, 30000);
 
 console.log('numeri da indovinare' + numeriDaIndovinare);
 
