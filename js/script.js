@@ -34,6 +34,22 @@ while (numeriDaIndovinare.length < 5) {
 }
 alert('Memorizza questi numeri:\n\n'+ numeriDaIndovinare);
 
+var countDown = 29;
+var tempo = setInterval(timer,1000);
+
+function timer () {
+    document.getElementById("risultato").innerHTML = countDown;
+    
+    if (countDown == -1) {
+        clearInterval(tempo);
+        
+    } else {
+        countDown--;
+    }
+
+}
+
+
 setTimeout(function() {
     for (var i =0; i < 5; i++) {
         conto++;
@@ -58,7 +74,7 @@ setTimeout(function() {
     document.getElementById('risultato').innerHTML = 'Hai indovinato ' + numeriIndovinati + ' numeri <br> ' + numeroIndovinato;
     
 
-}, 30000);
+}, 31000);
 
 console.log('numeri da indovinare' + numeriDaIndovinare);
 
